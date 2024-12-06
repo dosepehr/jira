@@ -20,7 +20,7 @@ const config: Config = {
                 md: '768px',
                 lg: '992px',
                 xl: '1200px',
-                '2xl': '1400px'
+                '2xl': '1400px',
             },
             colors: {
                 background: 'var(--background)',
@@ -28,7 +28,18 @@ const config: Config = {
             },
         },
     },
+
     plugins: [daisyui],
+    daisyui: {
+        themes: [
+            {
+                light: {
+                    ...require('daisyui/src/theming/themes')['light'],
+                    primary: 'blue',
+                    secondary: 'teal',
+                },
+            },
+        ],
+    },
 };
 export default config;
-

@@ -8,7 +8,7 @@ const page = ({ children }: { children: React.ReactNode }) => {
                 <nav className='flex justify-between items-center'>
                     <Image src={ICONS.logo} alt='jira' width={56} height={56} />
                 </nav>
-                {children}
+                <div className='mt-8'>{children}</div>
             </div>
         </main>
     );
