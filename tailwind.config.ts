@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss';
 import daisyui from 'daisyui';
+import themes from 'daisyui/src/theming/themes';
 const config: Config = {
     content: [
         './src/components/**/*.{js,ts,jsx,tsx}',
@@ -34,7 +35,7 @@ const config: Config = {
         themes: [
             {
                 light: {
-                    ...require('daisyui/src/theming/themes')['light'],
+                    ...themes['light'],
                     primary: 'blue',
                     secondary: 'teal',
                 },
