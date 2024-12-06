@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const page = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+    return <p className='text-black'>sign in</p>;
+};
 
-export default page
+export default page;
